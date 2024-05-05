@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+   <TITLE>EMAILESENHA</TITLE>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <SCRIPT LANGUAGE="JAVASCRIPT">
+FUNCTION VERIFICA(){
+
+VAR NOME = DOCUMENT.FENVIAR.FNOME.VALUE;
+VAR EMAIL = DOCUMENT.FENVIAR.FSENHA.VALUE;
+VAR RET = FALSE;
+
+//OPERADOR LOGICO OU E REPRESENTADO POR || EM JAVASCRIPT 
+IF (NOME == "" || SENHA == "1234"){
+ALERT("PREENCHA OS CAMPOS \N NOME E SENHA.")
+}ELSE{
+ALERT ("O FORMULARIO SERA ENVIADO!")
+RET = TRUE;
+}
+RETURN (RET);
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+   <table width = 100% height = 20% border =  "4" bgcolor = "#006600" bordercolor = yellow>
+   <td>
+    <div align="center"><font size="10" color = white ><b>home waa Locadora </b></font></div>
+   </td>
+   <table width =100% height =80% border = "4" bordercolor = yellow bgcolor = "#00FFCC">
+   <td>
+   <BR>
+<CENTER>
+<h1 align="center">HOME WAA LOCADORA</h1><br>
+<FORM METHOD=POST ACTION="andersom.html" NAME="PESQUISAR" ONSUBMIT="RETURN(VERIFICA())">
+DIGITE O NOME DE USUARIO:<INPUT TYPE="TEXT" NAME="FNOME" VALUE=""size="20"><BR>
+<BR>
+<INPUT TYPE="SUBMIT" VALUE="PESQUISAR">
+</FORM>
+</CENTER>
+
+   </td>
+
+</BODY>
+</HTML>

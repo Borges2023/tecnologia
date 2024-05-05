@@ -1,0 +1,44 @@
+<HTML>
+	<HEAD>
+		<title>atualizacaocliente</title>
+			<meta charset="utf-8">
+				<link rel="stylesheet" type="text/css" href="style.css">
+	</HEAD>
+					<BODY>
+						<table width = 100% height = 20% border =  "4" bgcolor = "#006600" bordercolor = yellow>
+							<td>
+								<div align="center">
+									<font size="10" color = white ><b>HOME WAA LOCADORA </b></font>
+								</div>
+							</td>
+						<table width =100% height =80% border = "4" bordercolor = yellow bgcolor = "#00FFCC">
+							<td>
+								<div align="center"class="center">
+									<font color=green size="6" ><b>SEJA BEM VINDO!!! </b></p></font>
+										<FORM METHOD=POST ACTION="home.html">
+						<table align = "center" border="0" width= 90% bordercolor=blue >
+							<td>
+								<?php
+									include "connect_Mysql.php";
+									$cod_cliente = $_POST["cod_cliente"];
+									$nome_cliente = $_POST["nome_cliente"];
+									$telefone = $_POST["telefone"];
+									$endereco = $_POST["endereco"];
+               
+									$consulta = mysql_query( "UPDATE cliente SET cod_cliente='$cod_cliente'  nome_cliente='$nome_cliente',
+									telefone='$telefone',endereco='$endereco'
+									WHERE cod_cliente='$cod_cliente'");
+            
+									$verificacao = mysql_query($consulta) or die ("ERRO: " . mysql_error());
+									if($verificacao==true) {
+									echo "?";
+									}><p>
+										<center>
+											<p>Dados do filme removidos com sucesso?
+										</center>
+      
+							</td>
+						</table>
+									<a href="home.html">HOME</a>
+					</BODY>
+</HTML>
