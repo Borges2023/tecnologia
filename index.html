@@ -5,11 +5,19 @@
 				<link rel="stylesheet" type="text/css" href="style.css">
 					<SCRIPT LANGUAGE="JAVASCRIPT">
 						
-        // Define the VERIFICA function
-        function VERIFICA() {
-            // Add your verification logic here
-            return true; // or false based on your validation
-        }
+       FUNCTION VERIFICA(){
+							VAR NOME = DOCUMENT.FENVIAR.FNOME.VALUE;
+							VAR EMAIL = DOCUMENT.FENVIAR.FSENHA.VALUE;
+							VAR RET = FALSE;
+								//OPERADOR LOGICO OU E REPRESENTADO POR || EM JAVASCRIPT 
+									IF (NOME == "andersom" || SENHA == "1234"){
+									ALERT("PREENCHA OS CAMPOS \ NOME E SENHA.")
+										}ELSE{
+									ALERT ("O FORMULARIO SERA ENVIADO!")
+										RET = TRUE;
+										}
+											RETURN (RET);
+										}
 
 					</SCRIPT>
 	</HEAD>
